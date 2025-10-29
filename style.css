@@ -1,21 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clickable SVG Background</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;" id="svg-background">
-        <a href="https://example.com/page1" target="_blank">
-            <circle cx="100" cy="100" r="50" fill="red" />
-        </a>
-        <a href="https://example.com/page2" target="_blank">
-            <rect x="200" y="50" width="100" height="100" fill="blue" />
-        </a>
-        <!-- Replace this with your SVG image -->
-        <image href="your-background-image.svg" width="100%" height="100%" />
-    </svg>
-</body>
-</html>
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f0f0f0; /* Fallback background color */
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Optional: Adding hover effects */
+circle:hover {
+    fill: orange; /* Change color on hover */
+}
+
+rect:hover {
+    fill: lightblue; /* Change color on hover */
+}
