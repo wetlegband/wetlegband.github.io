@@ -1,27 +1,37 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background-color: #f0f0f0; /* Fallback background color */
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+body {
+  font-family: "proxima-nova", sans-serif;
+  display: flex;
+  height: 100vh;
+  background: #262626;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+#houseSVG {
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+  font-family:'Oswald';
 }
 
-a {
-    cursor: pointer; /* Change cursor to pointer on hover */
+#buttonWrap {
+  width: 600px;
+  text-align: center;
+  background: #262626;
+  padding: 10px 0;
+  color: white;
 }
 
-/* Optional: Adding hover effects */
-circle:hover {
-    fill: orange; /* Change color on hover */
+button {
+  padding: 6px;
+  cursor: pointer;
+  font-family: "proxima-nova", sans-serif;
 }
 
-rect:hover {
-    fill: lightblue; /* Change color on hover */
+h3 {
+  line-height: 1.5;
+  margin: 5px 0;
 }
